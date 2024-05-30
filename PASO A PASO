@@ -31,6 +31,27 @@ $sudo chown -R prometheus:prometheus /var/lib/prometheus
 *Modificar el archivo prometheus.yml*
 sudo vim /etc/prometheus/prometheus.yml
 
+*Iniciar el servicio:*
+%sudo systemctl daemon-reload
+%sudo systemctl enable prometheus
+%sudo systemctl start prometheus
+%sudo systemctl status prometheus
+
+*Verificar el servicio el en puert 9090*
+$sudo ss -pnltu | grep 9090
+
 *Instalacion de Node expoter*
+$sudo wget https://github.com/prometheus/node_exporter/releases/download/v1.8.1/node_exporter-1.8.1.linux-amd64.tar.gz
+$tar -xvzf node_exporter-1.8.1.linux-amd64.tar.
+$mv node_exporter-1.8.1.linux-amd64 node_exporter
+
+*Ingresar al directorio de Node_Exporter*
+$cd node_exporter-1.8.1.linux-amd64/
+*Ejecutar el siguiente comando*
+$./node_exporter
+
+*Agregar el servicio en el archivo de configuracion de prometheus*
+$sudo vim prometheus.yml
+
 
 Instalacion de Grafana.
