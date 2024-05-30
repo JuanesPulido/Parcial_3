@@ -1,0 +1,38 @@
+-Configuracion instalacion FreebPBX Asterisk
+
+usuario:Root
+
+El pasword dentro de la instalacion de la maquina se configura
+y se utilizara en este paso.
+
+-Iniciar asterisk para ingreso de FreePBX en el browser 
+
+#Service Asterisk start
+#Service Asterisk status
+
+-Se necesita mirar la IP ques e configuro por medio del adaptador de
+puente
+
+#Ifconfig
+
+-Con la IP podemos buscar la aplicacion gratiuta la cual nos ayudara
+para la configuracion del IVR
+
+-Se hace los procesos pertinentes para ingresar a la aplicacion y despues
+agregar las extensiones que se requieran
+
+-De esta manera podemos configurar los grups rings que nos ayudara
+a poder enlazar la llamada con la extension que se requiera.
+
+-Siguiente a esto agregamos una grabacion de queramos que suene, 
+dentro de admin-recording system y se carga el archivo ya contruido.
+
+-Por ultimo se configura el IVR colcando el Menu el mensje de voz y 
+otras alternativas que se pueden colocar al contruir este sistema.
+
+-Procemos con este comando:
+
+#Asterisk -rvvvvvv3:35 p. m. 30/05/20243:35 p. m. 30/05/2024
+
+-Para ver el funcionamiento se utilizo la aplicacion Zoiper5 en un 
+computador y un celular y SOPHONE 3CX.
